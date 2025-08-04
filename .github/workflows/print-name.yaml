@@ -5,9 +5,9 @@ on:
       - master
 jobs:
   printing:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
-      - name: print-name"
+      - name: print-name
         run: echo "Added print-name"
 
                 
