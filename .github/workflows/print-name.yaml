@@ -1,0 +1,13 @@
+name: print-name
+on:
+        push:
+                branches:
+                        master
+jobs:
+        printing:
+                runs-on: ubuntu_latest
+                steps:
+                        - name: print-name"
+                          run: echo "Added print-name"
+
+                
