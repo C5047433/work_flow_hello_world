@@ -3,7 +3,7 @@ name: access id workflow
 on:
   push: 
     branches:
-      - main
+      - master
 
 jobs: 
   access_id_workflow
