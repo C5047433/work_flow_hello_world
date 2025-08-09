@@ -6,8 +6,8 @@ on:
       - master
 
 jobs: 
-  access_id_workflow
-    runs-on: ubuntu-latest
+  access_id_workflow:
+    runs-on: ubuntu-latest 
     steps:
       - name: print-access-id
         run: echo "The ACCESS_ID value $ACCESS_ID"
