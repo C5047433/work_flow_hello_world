@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - name: print-access-id
-        run: echo "The ACCESS_ID value $ACCESS_ID"
+        run: |
+             echo "The ACCESS_ID value $ACCESS_ID"
              echo "The SECRET value $SECRET"
         env: 
           ACCESS_ID: ${{ vars.ACCESS_ID }}
