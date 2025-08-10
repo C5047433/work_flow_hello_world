@@ -26,4 +26,4 @@ jobs:
         run: flake8 --version
 
       - name: check pytest
-        run: pytest --versio
+        run: pytest --version
