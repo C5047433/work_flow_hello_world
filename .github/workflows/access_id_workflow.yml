@@ -4,6 +4,8 @@ on:
   push: 
     branches:
       - master
+    path: 
+      - .github/workflows/access_id_workflow.yml
 
 jobs: 
   access_id_workflow:
