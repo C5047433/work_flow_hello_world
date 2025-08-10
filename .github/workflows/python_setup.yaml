@@ -1,0 +1,29 @@
+name: install python pip and flake
+
+on: 
+  push:
+    branches:
+      - "**"
+
+jobs:
+  pip-flake-install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: insall python
+        uses: actions/setup-python@v4
+        with:
+          python-version:'3.9'
+
+      - name: install pip & flask
+        run: |
+          python -m pip install --upgrade pip
+          python install pytest flake8
+
+      - name: check python version
+        run: python --version
+
+      - name: check flake version
+        run: flake8 --version
+
+      - name: check pytest
+        run: pytest --versio
