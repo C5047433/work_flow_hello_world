@@ -14,7 +14,7 @@ jobs:
       - name: print-access-id
         run: |
              echo "The ACCESS_ID is $ACCESS_ID"
-             echo "The SECRET value $SECRET"
+             echo "The secret is $SECRET"
         env: 
           ACCESS_ID: ${{ vars.ACCESS_ID }}
           SECRET: ${{ secrets.SECRET }}
